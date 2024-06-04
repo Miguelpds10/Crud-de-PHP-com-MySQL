@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Cadastrar Registros</h1>
+ <form action = "cad.php" method="post">
+    <label for ="text">Nome:</label>
+    <input type="text" id="txtNome"  name = "txtNome"required/>
+    <br/>
+    <br/>
+    <label for ="text">Email:</label>
+    <input type="email" id="txtEmail" name = "txtEmail" required/>
+    <br/>
+    <br/>
+    <label for ="text">Senha:</label>
+    <input type="password" id="txtSenha" name = "txtSenha" required/>
+    <br/>
+    <br/>
+    <label for="text">Sexo</label>
+    <input type="radio" name="txtSexo" id="txtsexoF" value="F">F
+    <input type="radio" name="txtSexo" id="txtsexoM" value="M"/>M<br/>
+    <br/>
+    <label for ="text">Data de Nascimento:</label>
+    <input type="date" id="txtdt"  name = "txtDtna"required/>
+    <br/>
+    <div class="botões">
+    <br/>
+    <input type="submit" value="Enviar"/>
+    <input type="reset" value="Limpar" onClick="document.getElementById('txtNome').focus();"/>
+    <input type="button" value="Menu" onClick="location.href= 'index.html'"/>
+    </div>
+    
+ </form>   
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>Document</title>
+</head>
+<body>
+ <h1 class="título">Pesquisar Registros</h1>
+ <form action = "pesq.php" method="post">
+    <label for ="text">Entre com o Critério:</label>
+    <br/>
+    <input type="text" id="txtCrit"  name = "txtCrit" required/>
+    <br/>
+    <div class="botões">
+    <br/>
+    <input type="submit" value="Pesquisar"/>
+    <input type="reset" value="Limpar" onClick="document.getElementById('txtNome').focus();"/>
+    <input type="button" value="Menu" onClick="location.href= 'index.html'"/>
+    </div>
+    
+ </form>   
+</body>
+</html>

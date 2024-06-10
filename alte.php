@@ -12,9 +12,9 @@
 		</script>
 	 </head>
     <body>
-        <form id="form1" method="post" action="alte.php">             
+        <form class = "formulário" id="form1" method="post" action="alte.php">             
         <?php  
-            echo "<h3>Alteração de Registros</h3>";
+            echo "<h3 class = 'título'>Alteração de Registros</h3>";
 
         	echo "<label for='txtcodi'>Código do registro a ser alterado:</label>";                 
             echo "<input type='text' name='txtcodi' id='txtcodi'/><br/>";
@@ -124,12 +124,12 @@
             }
             else if ($vbt=='Alterar')
             { 
-                $vcodi=$linha['codi_cr'];
-                $vnome=$linha['nome_cr'];
-                $vemai=$linha['email_cr'];
-        		$vsenh=$linha['senha_cr'];
-				$vsexo=$linha['sexo_cr'];
-                $vdtna=$linha['dtna_cr'];
+                $vcodi=$_POST['txtcodi'];
+                $vnome=$_POST['txtnome'];
+                $vemai=$_POST['txtemai'];
+        		$vsenh=$_POST['txtsenh'];
+				$vsexo=$_POST['txtsexo'];
+                $vdtna=$_POST['txtdtna'];
                 //atualizando o registro com os novos valores 
                 $alter=$cmd-> query("update tbcrud set nome_cr='$vnome', email_cr='$vemai', senha_cr='$vsenh', sexo_cr='$vsexo', dtna_cr='$vdtna' where codi_cr='$vcodi'");
 		        echo "<script language=javascript>

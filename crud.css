@@ -13,7 +13,7 @@
       background-color:rgb(71, 136, 90);
   }
   
-  h3{
+  .título{
     font-size: 25px;
     text-align: center;
     padding-bottom:40px;
@@ -21,7 +21,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  form{
+  .formulário{
     margin-top:10px;
     width: 200px;
     margin-bottom:2px;

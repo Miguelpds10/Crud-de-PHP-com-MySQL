@@ -14,15 +14,14 @@
     <body>
         <form class = "formulário" id="form1" method="post" action="alte.php">             
         <?php  
-            echo "<h3 class = 'título'>Alteração de Registros</h3>";
-
-        	echo "<label for='txtcodi'>Código do registro a ser alterado:</label>";                 
+            echo "<h3 class ='título'>Alteração de Registros</h3>";
+        	echo "<label for='txtcodi'>Código:</label>";                 
             echo "<input type='text' name='txtcodi' id='txtcodi'/><br/>";
             
             echo "<label for='txtnome'>Nome:</label>";                 
             echo "<input type='text' name='txtnome' id='txtnome'/><br/>";
             
-            echo "<label for='txtemai'>email:</label>";
+            echo "<label for='txtemai'>Email:</label>";
             echo "<input type='email' name='txtemai' id='txtemai'/><br/>";
             
             echo "<label for='txtsenh'>Senha:</label>";                 
@@ -33,7 +32,7 @@
 			      <input type='radio' value='m' name='txtsexo' id='txtsexom'/>Masculino
                   <br/>";
             
-            echo "<label for='txtdtna'>Informe sua data de nascimento:</label>";
+            echo "<label for='txtdtna'>Data de Nascimento:</label>";
             echo "<input type='date' id='txtdtna' name='txtdtna'/> <br/><br/>";
             
             echo "<div class='botoes'>

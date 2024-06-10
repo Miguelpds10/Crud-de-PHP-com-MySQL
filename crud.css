@@ -13,7 +13,7 @@
       background-color:rgb(71, 136, 90);
   }
   
-  .título{
+  h3{
     font-size: 25px;
     text-align: center;
     padding-bottom:40px;
@@ -21,6 +21,11 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  form{
+    margin-top:10px;
+    width: 200px;
+    margin-bottom:2px;
+}
   /*Tabela de Registros salvos do database*/
   table {
       border-collapse: collapse;
